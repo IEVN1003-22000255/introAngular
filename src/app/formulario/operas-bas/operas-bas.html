@@ -1,0 +1,67 @@
+<p>operas-bas works!</p>
+
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <div class="form-group pt-4">
+                <label for="num1">numero1:</label>
+
+                <input [(ngModel)]="num1"
+                    type="text"
+                    name="num1"
+                    class="form-control"
+                    id="num1"
+                    placeholder="ingresa el numero 1">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="num2">numero2:</label>
+
+                <input [(ngModel)]="num2"
+                    type="text"
+                    name="num2"
+                    class="form-control"
+                    id="num2"
+                    placeholder="ingresa el numero 2">
+            </div>
+
+            <br>
+
+            <label>
+                <input type="radio" name="operacion" value="sumar"
+                    [(ngModel)]="operacion">
+                sumar
+            </label>
+
+            <label>
+                <input type="radio" name="operacion" value="restar"
+                    [(ngModel)]="operacion">
+                restar
+            </label>
+
+            <label>
+                <input type="radio" name="operacion" value="multiplicar"
+                    [(ngModel)]="operacion">
+                multiplicar
+            </label>
+
+            <label>
+                <input type="radio" name="operacion" value="dividir"
+                    [(ngModel)]="operacion">
+                dividir
+            </label>
+
+            <br><br>
+
+            <button (click)="calcular()" type="button">
+                calcular
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <h2>Resultado: {{resultado}}</h2>
+</div>

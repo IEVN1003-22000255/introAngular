@@ -1,0 +1,66 @@
+<p>distancia works!</p>
+
+
+<p>distancia works!</p>
+
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <div class="form-group pt-4">
+                <label for="x1">x1:</label>
+
+                <input [(ngModel)]="x1"
+                    type="text"
+                    name="x1"
+                    class="form-control"
+                    id="x1"
+                    placeholder="ingresa x1">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="y1">y1:</label>
+
+                <input [(ngModel)]="y1"
+                    type="text"
+                    name="y1"
+                    class="form-control"
+                    id="y1"
+                    placeholder="ingresa y1">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="x2">x2:</label>
+
+                <input [(ngModel)]="x2"
+                    type="text"
+                    name="x2"
+                    class="form-control"
+                    id="x2"
+                    placeholder="ingresa x2">
+            </div>
+
+            <div class="form-group pt-4">
+                <label for="y2">y2:</label>
+
+                <input [(ngModel)]="y2"
+                    type="text"
+                    name="y2"
+                    class="form-control"
+                    id="y2"
+                    placeholder="ingresa y2">
+            </div>
+
+            <br>
+
+            <button (click)="calcular()" type="button">
+                calcular
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <h2>Resultado: {{resultado}}</h2>
+</div>
