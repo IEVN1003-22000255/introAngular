@@ -1,0 +1,62 @@
+<p>triangulos works!</p>
+
+<p>triangulos works!</p>
+
+<div class="row">
+    <div class="col-6">
+        <form>
+            <h3>Puntos del triángulo</h3>
+
+          
+            <h5>Punto A</h5>
+            <div class="form-group">
+                <label>X:</label>
+                <input [(ngModel)]="x1" type="number" name="x1" class="form-control" placeholder="0">
+                <label>Y:</label>
+                <input [(ngModel)]="y1" type="number" name="y1" class="form-control" placeholder="0">
+            </div>
+
+            <br>
+
+           
+            <h5>Punto B</h5>
+            <div class="form-group">
+                <label>X:</label>
+                <input [(ngModel)]="x2" type="number" name="x2" class="form-control" placeholder="0">
+                <label>Y:</label>
+                <input [(ngModel)]="y2" type="number" name="y2" class="form-control" placeholder="0">
+            </div>
+
+            <br>
+
+           
+            <h5>Punto C</h5>
+            <div class="form-group">
+                <label>X:</label>
+                <input [(ngModel)]="x3" type="number" name="x3" class="form-control" placeholder="0">
+                <label>Y:</label>
+                <input [(ngModel)]="y3" type="number" name="y3" class="form-control" placeholder="0">
+            </div>
+
+            <br>
+
+            <button (click)="analizarPuntos()" type="button" class="btn btn-primary">
+              
+            </button>
+        </form>
+    </div>
+
+   
+    <div class="col-6">
+        <h3>RESULTADO</h3>
+        
+        <p><strong>Punto A:</strong> {{resA}}</p>
+        <p><strong>Punto B:</strong> {{resB}}</p>
+        <p><strong>Punto C:</strong> {{resC}}</p>
+
+        <h4>{{mensaje}}</h4>
+
+       
+        <h4 *ngIf="esTriangulo">Área: {{area}} unidades cuadradas.</h4>
+    </div>
+</div>

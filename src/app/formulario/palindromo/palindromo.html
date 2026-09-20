@@ -1,0 +1,32 @@
+<p>palindromo works!</p>
+
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+            <div class="form-group pt-4">
+                <label for="oracion">oracion:</label>
+
+                <input [(ngModel)]="oracion"
+                    type="text"
+                    name="oracion"
+                    class="form-control"
+                    id="oracion"
+                    placeholder="ingresa una oracion">
+            </div>
+
+            <br>
+
+            <button (click)="calcular()" type="button">
+                calcular
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <h2>Resultado: {{resultado}}</h2>
+    <h2>Vocales: {{vocales}}</h2>
+    <h2>Consonantes: {{consonantes}}</h2>
+</div>

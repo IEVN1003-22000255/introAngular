@@ -1,0 +1,44 @@
+<p>validacion usuario</p>
+
+
+
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+
+           
+            <div class="form-group pt-4">
+                <label for="usuario">Usuario:</label>
+                <input [(ngModel)]="usuarioInput"
+                    type="text"
+                    name="usuarioInput"
+                    class="form-control"
+                    id="usuario"
+                    placeholder="Ingresa tu usuario">
+            </div>
+
+           
+            <div class="form-group pt-3">
+                <label for="password">Contraseña:</label>
+                <input [(ngModel)]="passwordInput"
+                    type="password"
+                    name="passwordInput"
+                    class="form-control"
+                    id="password"
+                    placeholder="Ingresa tu contraseña">
+            </div>
+
+            <br>
+
+           
+            <button (click)="validar()" type="button">
+                Validar
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<div class="col-6">
+    <h2>{{mensaje}}</h2>
+</div>
